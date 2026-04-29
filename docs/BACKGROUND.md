@@ -1,20 +1,20 @@
 # Background & Context — LtL Course Builder
 
-## The Problem
+## About This Toolkit
 
-For decades, training has followed a predictable pattern: **experts deliver content, and participants take notes.** This model assumes that information transfer equals learning—a premise contradicted by decades of adult education research.
+**NLCI** has practiced the **Learning that LASTS (LtL)** philosophy for more than a decade, using it to design and deliver training for Bible translators, linguistic specialists, and community literacy workers across multiple languages and contexts.
 
-The result? Participants forget most of what they heard. Transfer to the workplace is rare. Training budgets are spent inefficiently.
+This toolkit is not an introduction to LtL — it is an **AI-assisted workflow** built on top of a decade of LtL practice. Its purpose is to help experienced trainers design and produce LtL-aligned training resources **faster and more consistently**, without sacrificing the depth and rigor that makes the approach effective.
 
 ---
 
-## The Solution: Dialogue Education
+## What is Learning that LASTS?
 
-**Learning that LASTS (LtL)**, also called **Dialogue Education**, is a proven framework for adult learning developed and refined through decades of international development work. It's based on a simple insight:
+**Learning that LASTS (LtL)**, also called **Dialogue Education**, is an adult education framework grounded in a simple insight:
 
 > **Adults learn through dialogue and practice, not lectures.**
 
-When trainers ask powerful questions instead of delivering answers, and when participants *do* the thinking (solving problems, applying concepts, teaching each other), learning sticks.
+Instead of delivering information and hoping it sticks, LtL guides trainers to ask powerful questions and structure sessions as *tasks* — experiences where participants actively think, solve problems, and apply new knowledge.
 
 ### The Core Principle
 
@@ -30,19 +30,21 @@ Trainer asks → Participants think & discuss → Participants practice → Tran
 
 ---
 
-## Why This Toolkit?
+## Why Build an AI-Assisted Workflow?
 
-LtL is powerful, but **designing training this way is complex**. It requires:
+NLCI's LtL expertise is proven. The bottleneck is not the framework — it's the **time and effort required to produce well-designed training materials** at scale.
+
+Designing LtL-aligned training requires:
 
 - Asking the right interview questions to surface the real need
 - Structuring content as *tasks*, not lectures
 - Mapping learning outcomes to evidence and practice
 - Managing multiple decision points (Who? Why? What Evidence? Where? When? How?)
-- Generating polished materials that reflect the design
+- Generating polished materials (handouts, quizzes, facilitator guides, etc.) that reflect the design
 
-Trainers often end up doing this manually, consulting guides, and working alone. The process is error-prone and can take weeks.
+Doing this manually, consulting guides, and working alone can take weeks per event. When NLCI needs to scale training to multiple sites and languages, that pace is unsustainable.
 
-**This toolkit automates the guided interview and file generation**, keeping trainers focused on *thinking* rather than *typing*.
+**This toolkit uses AI to guide trainers through the exact same rigorous LtL design process**, then generates all the required resources automatically — keeping trainers focused on *thinking* rather than *typing*.
 
 ---
 
