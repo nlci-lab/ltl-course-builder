@@ -1,0 +1,58 @@
+# .gitignore for LtL Course Builder Projects
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-workspace
+.sublime-project
+
+# Node (if using Node-based tools)
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+
+# Python (if using Python-based tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+pip-log.txt
+
+# Build & Temp Files
+*.tmp
+*.bak
+*.backup
+*.log
+build/
+dist/
+*.egg-info/
+
+# Confidential Content (customize as needed)
+secrets.md
+credentials.json
+.env
+.env.local
+
+# Generated outputs (optional: remove this comment to keep generated files tracked)
+# training-materials/
+
+# IDE Extensions
+*.vsix
