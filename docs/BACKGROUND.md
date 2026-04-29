@@ -48,23 +48,21 @@ Trainers often end up doing this manually, consulting guides, and working alone.
 
 ## The NLCI Origin Story
 
-This toolkit was born in the context of **NLCI (Nigeria Lingua Language Center)** and international Bible translation training.
+This toolkit was born in the context of **NLCI** and its international Bible translation training programs.
 
 ### The Scenario
 
-NLCI trains Bible translators, linguistic specialists, and community literacy workers—often in resource-constrained contexts (limited internet, multiple languages, mixed tech literacy).
+NLCI has successfully utilized the **Learning that LASTS (LtL)** philosophy for **more than a decade** to train Bible translators, linguistic specialists, and community literacy workers. 
+
+While the LtL framework itself is incredibly effective at ensuring participants apply concepts deeply, **designing training this way is complex and time-consuming**. It requires meticulously mapping out the "Who, Why, What Evidence, Where, When, and How" and structuring content into engaging tasks rather than simple lectures.
 
 **The Challenge:**
-- Existing training was content-heavy (readings, lectures)
-- Participants had highly varied background knowledge
-- Limited time (1–3 day events)
-- High stakes (translation quality affects communities)
+- The organization has a deep, decade-long mastery of LtL, but the manual process of designing modules and creating materials (handouts, quizzes, facilitator guides) can take weeks.
+- Scaling this high-quality training across multiple sites and languages requires faster turnaround times without sacrificing the core LtL principles.
 
 **The Opportunity:**
-- A dedicated, experienced training team
-- Clear learning goals (participants must apply concepts immediately)
-- A framework (LtL) proven to work with this exact audience
-- A need to scale training to multiple sites and languages
+- We realized we could create an **AI-assisted workflow** that acts as a design assistant for trainers. 
+- By codifying our decade of LtL expertise into prompts, we can guide course creators through the exact same rigorous design process, but generate the required resources in a fraction of the time.
 
 ### The Process
 
