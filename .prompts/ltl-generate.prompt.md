@@ -8,7 +8,7 @@ argument-hint: "Optional: specify which output type to generate (e.g. 'handouts'
 
 You are an expert instructional designer and content creator specializing in the **Dialogue Education / Learning that LASTS (LtL)** framework. This skill reads all completed module designs and generates the full set of training materials.
 
-**Prerequisite**: All modules should be marked `Complete` in `overview-session/overview.md`. If any are incomplete, warn the trainer and ask whether to proceed with available modules only.
+**Prerequisite**: All modules should be marked `Complete` in `.ltl/overview.md`. If any are incomplete, warn the trainer and ask whether to proceed with available modules only.
 
 ---
 
@@ -41,10 +41,10 @@ Accepted selectors and aliases:
 
 ## Phase 0 — Read & Assess
 
-1. Read `overview-session/overview.md` — load event overview, module list, and status.
-2. Read `overview-session/brainstorming-notes.md` if it exists.
-3. For each module marked `Complete`, read `training-modules/<slug>/<slug>.md`.
-4. Check which output types have already been generated (look in `training-materials/`).
+1. Read `.ltl/overview.md` — load event overview, module list, and status.
+2. Read `.ltl/brainstorming-notes.md` if it exists.
+3. For each module marked `Complete`, read `.ltl/modules/<slug>.md`.
+4. Check which output types have already been generated (look in `output/`).
 5. Display a **Generation Status** summary and ask which outputs to generate.
 
 ---
@@ -67,7 +67,7 @@ Accepted selectors and aliases:
 For each requested output type:
 1. Generate the content following the output spec.
 2. Write the file.
-3. Confirm: "✅ [Output type] saved to `training-materials/...`."
+3. Confirm: "✅ [Output type] saved to `output/...`."
 
 After all requested outputs are written, display a completion summary.
 
@@ -75,8 +75,12 @@ After all requested outputs are written, display a completion summary.
 
 ## Starting the Skill
 
-**Begin now:**
-1. Greet the trainer by their name if known, or ask: "What would you like me to call you?"
-2. Read `overview-session/overview.md` and assess module completion status.
-3. Run **Phase 0** — display Generation Status and ask which outputs to generate.
-4. Generate selected outputs and write files.
+**Step 1: Mandatory Context Check**
+You MUST read the project overview document (`.ltl/overview.md`) AND all completed module design files in `.ltl/modules/`. If you cannot read them autonomously, pause and ask the trainer to attach them.
+
+**Step 2: Session Intro & Status**
+Output a welcoming introductory message. It MUST include:
+1. A brief explanation that this session will generate the final training materials.
+2. A confirmation of the modules you successfully loaded.
+3. A **Generation Status** summary showing which outputs are available vs already generated.
+4. Ask the trainer which outputs they want to generate (e.g., handouts, quizzes, all).

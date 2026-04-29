@@ -2,27 +2,20 @@
 
 ## System Requirements
 
-- **VS Code** with **GitHub Copilot Chat**
+- **An AI-assisted IDE** supporting `.prompts` (e.g., Cursor, Windsurf, or VS Code with GitHub Copilot)
 - **Git** (for version control and pushing to GitHub)
 - A terminal or command line (PowerShell, bash, zsh, etc.)
 
 ## Installation Steps
 
-### 1. Copy Skills to Your Prompts Directory
+### 1. Open the Project in Your AI IDE
 
-**Windows:**
-```powershell
-Copy-Item "path/to/ltl-course-builder/skills/*.prompt.md" `
-  -Destination "$env:APPDATA\Code\User\prompts\" -Verbose
-```
+Since the skills are stored in the `.prompts` directory, compatible AI IDEs will automatically detect them. There is no need to install them globally.
 
-**macOS/Linux:**
-```bash
-cp path/to/ltl-course-builder/skills/*.prompt.md \
-   ~/Library/Application\ Support/Code/User/prompts/
-```
+1. Clone or download this repository.
+2. Open the project folder in your AI IDE (Cursor, Windsurf, or VS Code).
 
-Verify: You should now see `/ltl`, `/ltl-brainstorming`, `/ltl-event`, `/ltl-module`, `/ltl-generate` available in Copilot chat.
+Verify: You should now see `/ltl`, `/ltl-brainstorming`, `/ltl-event`, `/ltl-module`, `/ltl-generate` available in your AI chat interface.
 
 ---
 
@@ -88,13 +81,9 @@ git commit -m "Initial project setup"
 
 ### 4. Start Your First Training Design
 
-Open VS Code in your training project folder:
+Open your AI IDE in your training project folder.
 
-```bash
-code .
-```
-
-Open GitHub Copilot Chat and run:
+Open your AI chat interface and run:
 
 ```
 /ltl
@@ -191,7 +180,7 @@ my-training-project/
 ## Troubleshooting
 
 ### "Skill not found" error
-**Solution**: Verify that all `.prompt.md` files are in your VS Code prompts directory. Reload VS Code and try again.
+**Solution**: Verify that you have opened the folder containing the `.prompts` directory in your AI IDE. Reload your IDE and try again.
 
 ### Skills are loaded but responses are generic
 **Solution**: Check that the skill file content matches what's in this repo. AI behavior depends on the exact prompt instructions.

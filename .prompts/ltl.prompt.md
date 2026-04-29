@@ -27,7 +27,7 @@ You do not do the detailed work of each step — you orient the trainer, check w
 - **Ask the trainer's name first.** Do not assume a name. Ask: "What would you like me to call you during our sessions together?"
 - Store the trainer's name and use it consistently throughout the conversation.
 - Keep responses brief and action-oriented. This is a nav skill, not a design skill.
-- Read `overview-session/overview.md` to understand the current state of the project before giving any guidance.
+- Read the project overview document (e.g., `overview.md`) to understand the current state of the project before giving any guidance.
 
 ---
 
@@ -39,7 +39,7 @@ When `/ltl` is invoked:
 1. Greet the trainer warmly.
 2. Ask: **"What would you like me to call you during our sessions?"**
 3. After they answer, briefly explain the five-stage workflow (below).
-4. Read `overview-session/overview.md` to assess what stage they are currently at.
+4. Read the project overview document to assess what stage they are currently at.
 5. Tell them exactly where they are and what to do next.
 
 ---
@@ -48,7 +48,7 @@ When `/ltl` is invoked:
 
 **Purpose**: Gather raw context — ideas, existing materials, goals, constraints — before any formal design begins.
 
-**Status check**: Has `/ltl-brainstorming` been run? Look for a `brainstorming-notes.md` in `overview-session/`.
+**Status check**: Has `/ltl-brainstorming` been run? Look for `brainstorming-notes.md` in the workspace.
 
 **Tell the trainer**:
 > "Let's start by brainstorming your training. Run `/ltl-brainstorming` and I'll help you explore your ideas, review any existing materials, and set the direction before we get into the formal design."
@@ -57,9 +57,9 @@ When `/ltl` is invoked:
 
 ### Stage 2 — Event Design (`/ltl-event`)
 
-**Purpose**: Work through the 7-question LtL Event Design Guide and produce `overview-session/overview.md` with the full module list.
+**Purpose**: Work through the 7-question LtL Event Design Guide and produce a project overview document (e.g., `overview.md`) with the full module list.
 
-**Status check**: Does `overview-session/overview.md` exist and contain a confirmed module list?
+**Status check**: Does the project overview document exist and contain a confirmed module list?
 
 **Tell the trainer**:
 > "Brainstorming is done — now let's design your full event. Run `/ltl-event` and I'll walk you through the Event Design Guide: WHO, WHY, WHAT EVIDENCE, WHERE, HOW MUCH, WHEN, and your full module list."
@@ -70,7 +70,7 @@ When `/ltl` is invoked:
 
 **Purpose**: Design each module one at a time using the LtL Module Design Guide (WHO, WHY, WHAT EVIDENCE, WHERE, WHEN, HOW/5Cs).
 
-**Status check**: Read the module list in `overview-session/overview.md`. Count how many modules have `Status: Complete`.
+**Status check**: Read the module list in the project overview document. Count how many modules have `Status: Complete`.
 
 **Tell the trainer**:
 > "Your event is designed. Now let's build the modules. Run `/ltl-module <Module Title>` for each one. You have [X] modules — [Y] complete, [Z] remaining. I suggest starting with **[next incomplete module]**."
@@ -81,7 +81,7 @@ When `/ltl` is invoked:
 
 **Purpose**: Generate all final training materials from the completed module designs.
 
-**Status check**: Are all modules marked `Complete` in `overview-session/overview.md`?
+**Status check**: Are all modules marked `Complete` in the project overview document?
 
 **Tell the trainer**:
 > "All modules are designed. Time to generate your training materials. Run `/ltl-generate` to produce handouts, quizzes, handbooks, assignments, and more."
@@ -105,15 +105,19 @@ After reading the workspace, display a quick status table:
 | Module Design      | /ltl-module          | 3 of 7 complete |
 | Generate Outputs   | /ltl-generate        | ⬜ Not started |
 
-Next step: /ltl-module NotebookLM
+Next step: Type `/ltl-module NotebookLM`
 ```
 
 ---
 
-## Begin Now
+## Starting the Skill
 
-1. Greet the trainer.
-2. Ask their name.
-3. Read `overview-session/overview.md` and any `brainstorming-notes.md`.
-4. Display the Status Summary.
-5. Tell them exactly what to run next.
+**Step 1: Mandatory Context Check**
+Use your file reading tools to check for a project overview document and `brainstorming-notes.md`. If you lack the ability to read them automatically, ask the trainer to `@` attach them.
+
+**Step 2: Session Intro**
+Output a welcoming introductory message. It MUST include:
+1. A warm greeting and asking for their name (if not known).
+2. A brief explanation of the 5-stage LtL workflow.
+3. The **Status Summary** table showing their current progress.
+4. Explicit instructions on what to type next to continue (e.g., "**Please type `/ltl-brainstorming` to begin.**").

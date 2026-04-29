@@ -35,22 +35,21 @@ An orchestrator skill (`/ltl`) guides you through the journey, showing you where
 ## 🚀 Quick Start
 
 ### Prerequisites
-- GitHub Copilot in VS Code (or compatible chat interface with prompt support)
-- A VS Code workspace for your training project
+- An AI-assisted IDE that supports workspace prompts (e.g., Cursor, Windsurf, or VS Code with GitHub Copilot)
+- A workspace for your training project
 
 ### Installation
 
-1. **Copy the skills to your prompts folder:**
-   - Copy all `.prompt.md` files from `skills/` folder to your VS Code user prompts directory:
-     - **Windows**: `C:\Users\<Your Username>\AppData\Roaming\Code\User\prompts\`
-     - **macOS**: `~/Library/Application Support/Code/User/prompts/`
-     - **Linux**: `~/.config/Code/User/prompts/`
+Since the skills are stored in the `.prompts` directory, compatible AI IDEs will automatically detect them. There is no need to install them globally.
+
+1. **Open this repository**
+   - Open the folder containing the `.prompts` directory in your AI IDE (Cursor, Windsurf, or VS Code).
 
 2. **Create a training project workspace** (or use an existing one):
    - Create directories: `overview-session/`, `training-modules/`, `ltl-resources/`
 
 3. **Start the journey:**
-   - In Copilot chat, run `/ltl` to begin
+   - In your AI chat interface, run `/ltl` to begin
 
 ---
 
@@ -322,9 +321,9 @@ Please open an issue or PR on the GitHub repo.
 
 ## 🎯 Get Started
 
-1. Copy the skill files to your VS Code prompts folder (see **Installation** above)
-2. Open a training project workspace
-3. Run `/ltl` to initialize
+1. Open this repository in your AI IDE
+2. Create or open a training project workspace
+3. Run `/ltl` in your AI chat to initialize
 4. Follow the guided workflow
 
 **That's it.** You're now designing training the LtL way.
@@ -333,4 +332,4 @@ Please open an issue or PR on the GitHub repo.
 
 ## Questions?
 
-Refer to the individual skill files in `/skills` for detailed instructions on each step, or run any skill with `/ltl` to get oriented.
+Refer to the individual skill files in `/.prompts` for detailed instructions on each step, or run any skill with `/ltl` to get oriented.
